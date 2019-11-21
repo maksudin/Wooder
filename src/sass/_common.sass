@@ -2,34 +2,152 @@ body
 	font-family: "Proxima Nova", sans-serif
 
 
+.slider
+	display: none
 
+
+.hamburger
+	display: flex
+	align-items: center
+	&__text
+		font-size: 15px
+		letter-spacing: 0px
+		line-height: 27px
+		color: #ffffff
+		font-weight: bold
 
 .hamburger-icon
 	width: 33px
-	height: 50px
-	border: 1px solid black
-	span
+	margin-right: 12px
+	p
 		width: 33px
 		height: 1px
-		background-color: #ffffff
-		border: 3px solid #bea67c
-		// &:not(:last-child)
-		margin-bottom: 9px
+		background-color: #bea67c
+		&:not(:last-child)
+			margin-bottom: 8px
+
+.centered
+	margin:
+		left: auto
+		right: 102px
+
+header
+	margin-bottom: 200px
+	// width: 100%
+	background: #141414 url('/img/footer.png') 
+	background-repeat: no-repeat
+	background-size: 100%
+	background-position: right
+
+.header-top
+	padding: 34px 27px
+	display: flex
+	align-items: baseline
 
 
 
+.nav
+	color: #ffffff
+	ul
+		display: flex
+		list-style: none
+		li
+			&:not(:first-child)
+				margin-left: 119px
+			&:last-child
+				margin-right: 367px
+
+.info-icon
+	width: 23px
+	height: 23px
+	color: white
+	padding-top: 2px
+	text-align: center
+	border: 1px solid #ffffff
+	border-radius: 50%
+	margin-right: 52px
+	
+
+.header-right
+	display: flex
+
+.header-lang
+	color: #ffffff
+	display: flex
+	span
+		margin-right: 6px
+
+.header-intro
+	margin-top: 302px
+	margin-left: auto
+	margin-right: auto
+	width: 500px
+	display: flex
+	flex-direction: column
+	
+
+	&__title
+		font-size: 100px
+		letter-spacing: 20px
+		line-height: 100px
+		color: #bea67c
+		font-weight: bold
+		margin-bottom: 61px
+		// text-align: center
+
+.mouse-icon
+	margin-top: 66px
+	bottom: 32px
+	width: 20px
+	height: 30px
+
+.arrow-down-icon
+	height: 74px
+	width: 50px
+	fill: #ffffff
+	position: relative
+	right: 15px
+	margin-top: 24px
+
+.rotated-text
+	color: #ffffff
+	// position: absolute
+	
+.scroll-text
+	transform: rotate(90.0deg)
+	margin-bottom: 176px
+	height: 100px
+	width: 1px
+	position: relative
+	right: 6px
+	bottom: 50px
+
+	font-size: 14px
+	letter-spacing: 3px
+	line-height: 70px
+	color: #ffffff
+	font-weight: bold
 
 
-
-
-
-
-
-
-
-
-
-
+.btn	
+	width: 306px
+	height: 58px
+	border: 2px solid #ffffff
+	display: flex
+	align-items: center
+	justify-content: center
+	padding-left: 20px
+	&__text
+		color: #ffffff
+		font-size: 14px
+		letter-spacing: 3px
+		line-height: 70px
+		color: #ffffff
+		font-weight: bold
+	&__icon--right
+		width: 50px
+		height: 30px
+		transform: rotate(-90.0deg)
 
 
 
@@ -70,6 +188,6 @@ footer
 		width: 54px
 		height: 3px
 		background-color: #bea67c
-		bottom: 20px
+		bottom: 18px
 		left: 38px
 		

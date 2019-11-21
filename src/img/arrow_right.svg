@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 234 232" width="234" height="232">
+	<defs>
+		<image width="234" height="232" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOoAAADoCAMAAADWgoh3AAAAAXNSR0IB2cksfwAAADlQTFRFAAAA////////////////////////////////////////////////////////////////////////Cjo1bwAAABN0Uk5TACFLC+ZBMOI3UO4tYOkk/+ol5dFNDa8AAADVSURBVHic7dbJcQIwAARBDhuwzZ1/sITgDyUVo+4Idh46Nhv4QNvd7AXD7L++Z08Y5nA8zZ4wzM/v3+wJw5wv19kT3ub2r9kLRznfH7MnDLLOWV3nBt4/l3lXF/otAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAO91mDxhHapHUIqlFUoukFkktkloktUhqkdQiqUVSi6QWSS2SWiS1SGqR1CKpRVKLpBZJLZJaJLVIapHUIqlFUoukFkktkloktUhqkdQiqUVSixZKXcULhjkHOyxg4e4AAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Main Screen">
+		<use id="Прямоугольник 16 kопировать 6" href="#img1" x="0" y="0" />
+	</g>
+</svg>
