@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 8" width="10" height="8">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #a9946e } 
+	</style>
+	<g id="Header">
+		<path id="Прямоугольник 18" class="shp0" d="M8 2L5 6L2 2" />
+	</g>
+</svg>
