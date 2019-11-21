@@ -1,6 +1,12 @@
 body
 	font-family: "Proxima Nova", sans-serif
+	// overflow-x: hidden
 
+
+a
+	text-decoration: none
+// 	margin: 0
+// 	padding: 0
 
 .slider
 	display: none
@@ -9,6 +15,7 @@ body
 .hamburger
 	display: flex
 	align-items: center
+	cursor: pointer
 	&__text
 		font-size: 15px
 		letter-spacing: 0px
@@ -33,11 +40,10 @@ body
 
 header
 	margin-bottom: 200px
-	// width: 100%
 	background: #141414 url('/img/footer.png') 
 	background-repeat: no-repeat
 	background-size: 100%
-	background-position: right
+	background-position: center
 
 .header-top
 	padding: 34px 27px
@@ -47,7 +53,6 @@ header
 
 
 .nav
-	color: #ffffff
 	ul
 		display: flex
 		list-style: none
@@ -56,6 +61,11 @@ header
 				margin-left: 119px
 			&:last-child
 				margin-right: 367px
+
+			a 
+				color: #ffffff
+
+
 
 .info-icon
 	width: 23px
@@ -66,14 +76,18 @@ header
 	border: 1px solid #ffffff
 	border-radius: 50%
 	margin-right: 52px
+	cursor: pointer
 	
 
 .header-right
 	display: flex
+	align-items: baseline
+
 
 .header-lang
 	color: #ffffff
 	display: flex
+	cursor: pointer
 	span
 		margin-right: 6px
 
@@ -137,6 +151,7 @@ header
 	align-items: center
 	justify-content: center
 	padding-left: 20px
+	cursor: pointer
 	&__text
 		color: #ffffff
 		font-size: 14px
@@ -144,13 +159,197 @@ header
 		line-height: 70px
 		color: #ffffff
 		font-weight: bold
-	&__icon--right
-		width: 50px
+	&__icon
+		&--right
+			width: 50px
+			height: 30px
+			transform: rotate(-90.0deg)
+		&--orange 
+			position: relative
+			top: 10px
+	
+
+
+
+
+
+
+.info-container
+	margin-top: 130px
+	margin-bottom: 130px
+	display: flex
+	align-items: center
+	justify-content: center
+
+
+.info-text-container
+	width: 575px
+	display: flex
+	flex-direction: column
+
+	&--right
+		align-items: flex-end
+		justify-content: flex-end
+		// float: right
+		
+
+.info-text-container__title
+	margin-bottom: 32px
+	&__text
+		font-size: 48px
+		letter-spacing: 3px
+		line-height: 100px
+		color: #010101
+		font-weight: bold
+
+
+.info-subtext-container
+	margin-bottom: 32px
+	&__text
+		// height: 74px
+		font-size: 18px
+		letter-spacing: 0px
+		line-height: 25px
+		color: #464646
+		&--right
+			width: 220px
+		&--left
+			width: 356px
+	
+
+.info-img
+	width: 615px
+	height: 400px
+	background-repeat: no-repeat
+	&--table
+		background-size: 140%
+		background-position: right
+	
+.info-img-container
+	box-shadow: 0 0 0 8px rgba(195, 195, 197, 0.2), 0 0 0 6px rgba(195, 195, 197, 0.178)
+	border: 0px solid white
+	border-radius: 5px
+
+.learn-more
+	cursor: pointer
+	&__text
+		font-size: 14px
+		letter-spacing: 3px
+		line-height: 70px
+		color: #000000
+		font-weight: bold
+
+
+.section-num-container
+	position: relative
+	// top: 100px
+	&--left
+		right: 175px
+	&--right
+		left: 275px
+
+
+	width: 120px
+	&__num-text
 		height: 30px
-		transform: rotate(-90.0deg)
+		font-size: 36px
+		letter-spacing: 3px
+		line-height: 100px
+		color: #000000
+		font-weight: bold
+	&__num
+		display: flex
+		
+.dot
+	width: 6px
+	height: 6px
+	border-radius: 50%
+	background-color: #bea67c
+	margin-top: 58px
+	
 
 
 
+
+
+
+
+.quality
+	margin-top: 114px
+	&__title
+		text-align: center
+		font-size: 48px
+		letter-spacing: 3px
+		line-height: 100px
+		color: #000000
+		font-weight: bold
+		text-align: center
+	&__subtext
+		// width: 574px
+		height: 82px
+		font-size: 18px
+		letter-spacing: 0px
+		line-height: 25px
+		color: #636262
+		text-align: center
+		margin-bottom: 80px
+
+
+
+.quality-videos-container
+	display: flex
+	align-items: center
+	justify-content: center
+
+.quality-video-block
+	margin-bottom: 157px
+	
+	&:not(:last-child)
+		margin-right: 82px
+
+	&__preview
+		display: flex
+		flex-direction: column
+		margin-bottom: 0
+		align-items: center
+		cursor: pointer
+		
+	&__preview-border
+			width: 272px
+			height: 272px
+			border-radius: 136px
+			// background-color: #bababa
+			border: 1px solid #e1e1e1
+
+	&__preview-img
+		width: 240px
+		height: 240px
+		background-repeat: no-repeat
+		background-size: cover
+		border-radius: 50%
+		position: relative
+		z-index: 100
+		bottom: 257px
+		left: 16px
+
+	&__preview-icon
+		position: relative
+		bottom: 227px
+	
+	&__text
+		text-align: center
+		font-size: 18px
+		letter-spacing: 0px
+		line-height: 24px
+		color: #000000
+		text-align: center
+
+
+.play-icon
+	z-index: 200
+
+.preview-container	
+	height: 325px
 
 .footer-container
 	width: 100%
@@ -176,6 +375,7 @@ footer
 		color: #858383
 
 .logo
+	cursor: pointer
 	&__name
 		font-size: 30px
 		letter-spacing: 9px

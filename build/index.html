@@ -45,9 +45,9 @@
           <!-- begin nav -->
           <div class='nav'>
             <ul>
-              <li>HOME</li>
-              <li>PRODUCTS</li>
-              <li>ABOUT</li>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">PRODUCTS</a></li>
+              <li><a href="#">ABOUT</a></li>
             </ul>
           </div>
           <!-- end nav -->
@@ -79,58 +79,68 @@
       <div class='products-container'>
         <!-- begin products -->
         <div class='products'>
-          <!-- begin info -->
+          <!-- begin info-container -->
           <div class='info-container'>
-            <!-- begin info__text-container -->
-            <div class="info__text-container">
-              <div class="info__title-container">
-                <div class="info__title-decor--left"></div>
-                <span class="info__title">FURNITURE</span>
+            <!-- begin info-text-container -->
+            <div class="info-text-container info-text-container--left">
+              <div class="info-text-container__title">
+                <div class="info-text-container__title__decor--left"></div>
+                <span class="info-text-container__title__text">FURNITURE</span>
               </div>
-              <div class="info__subtext-container">
-                <div class="info__subtext-decor--left"></div>
-                <p class="info__subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis augue quis sagittis consequat. Aliquam erat volutpat. Ut eu pulvinar nunc. risus.</p>
+              <div class="info-subtext-container">
+                <div class="info-subtext-container__decor--left"></div>
+                <p class="info-subtext-container__text info-subtext-container__text--left">Lorem ipsum dolor sit amet consectetur adipiscing, consectetur adipiscing elit. Sed sagittis augue quis sagittis consequat. risus.</p>
               </div>
               <div class="learn-more">
-                <span class="learn-more--text">LEARN MORE</span>
-                <img class="learn-more--icon" src="arrow_right">
-                <div class="learn-more--underline"></div>
+                <span class="learn-more__text">LEARN MORE</span>
+                <img class="btn__icon--right btn__icon--orange" src="img/arrow_down_orange.svg">
+                <div class="learn-more__underline"></div>
+                <div class="section-num-container section-num-container--left">
+                  <span class="section-num-container__num">
+                    <span class="section-num-container__num-text">01</span>
+                    <div class="dot"></div>
+                  </span>
+                  <div class="section-num-container__decor"></div>
+                </div>
               </div>
             </div>
-            <!-- end info__text-container -->
-            <div class="info-img" style="background-image: url('img/table.png')"></div>
+            <!-- end info-text-container -->
+            <div class="info-img-container">
+              <div class="info-img info-img--table" style="background-image: url('img/table.png')"></div>
+            </div>
           </div>
-          <!-- end info -->
-          <div class="section-num-container">
-            <span class="section-num">01 <div class="dot">.</div></span>
-            <div class="section-decor"></div>
-          </div>
-          <!-- begin info -->
+          <!-- end info-container -->
+          <!-- begin info-container -->
           <div class='info-container'>
-            <div class="info-img" style="background-image: url('img/table.png')"></div>
-            <!-- begin info__text-container -->
-            <div class="info__text-container">
-              <div class="info__title-container">
-                <div class="info__title-decor--right"></div>
-                <span class="info__title">DECOR</span>
+            <div class="info-img-container">
+              <div class="info-img info-img--bench" style="background-image: url('img/bench.png')"></div>
+            </div>
+            <!-- begin info-text-container -->
+            <div class="info-text-container info-text-container--right">
+              <div class="info-text-container__title">
+                <div class="info-text-container__title__text-decor--right"></div>
+                <span class="info-text-container__title__text">DECOR</span>
               </div>
-              <div class="info__subtext-container">
-                <div class="info__subtext-decor--right"></div>
-                <p class="info__subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis augue quis sagittis consequat. Aliquam erat volutpat. Ut eu pulvinar nunc. risus.</p>
+              <div class="info-subtext-container">
+                <div class="info-subtext-container__decor--right"></div>
+                <p class="info-subtext-container__text info-subtext-container__text--right">Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit sed sagittis augue quis. </p>
               </div>
               <div class="learn-more">
-                <span class="learn-more--text">LEARN MORE</span>
-                <img class="learn-more--icon" src="arrow_right">
-                <div class="learn-more--underline"></div>
+                <span class="learn-more__text">LEARN MORE</span>
+                <img class="btn__icon--right btn__icon--orange" src="img/arrow_down_orange.svg">
+                <div class="learn-more__underline"></div>
+                <div class="section-num-container section-num-container--right">
+                  <span class="section-num-container__num">
+                    <span class="section-num-container__num-text">02</span>
+                    <div class="dot"></div>
+                  </span>
+                  <div class="section-num-container__decor"></div>
+                </div>
               </div>
             </div>
-            <!-- end info__text-container -->
-            <div class="section-num-container">
-              <span class="section-num">02 <div class="dot">.</div></span>
-              <div class="section-decor"></div>
-            </div>
+            <!-- end info-text-container -->
           </div>
-          <!-- end info -->
+          <!-- end info-container -->
         </div>
         <!-- end products -->
         <!-- begin quality -->
@@ -143,34 +153,42 @@
             <!-- begin quality-video -->
             <div class='quality-video-block'>
               <div class="quality-video-block__preview">
-                <div class="quality-video-block__preview-border"></div>
-                <div class="quality-video-block__preview-img" style="background-image: url('img/table.png')"></div>
+                <div class="preview-container">
+                  <div class="quality-video-block__preview-border"></div>
+                  <div class="quality-video-block__preview-img" style="background-image: url('img/quality1.png')">
+                  </div>
+                </div>
                 <img class="quality-video-block__preview-icon play-icon" src="img/play.svg">
               </div>
               <div class="quality-video-block__decor"></div>
-              <span class="quality-video-block__text">Innovative Design</span>
+              <div class="quality-video-block__text">Innovative Design</div>
             </div>
             <!-- end quality-video -->
             <!-- begin quality-video -->
             <div class='quality-video-block'>
               <div class="quality-video-block__preview">
-                <div class="quality-video-block__preview-border"></div>
-                <div class="quality-video-block__preview-img" style="background-image: url('img/table.png')"></div>
+                <div class="preview-container">
+                  <div class="quality-video-block__preview-border"></div>
+                  <div class="quality-video-block__preview-img" style="background-image: url('img/quality1.png')">
+                  </div>
+                </div>
                 <img class="quality-video-block__preview-icon play-icon" src="img/play.svg">
               </div>
               <div class="quality-video-block__decor"></div>
-              <span class="quality-video-block__text">Innovative Design</span>
+              <div class="quality-video-block__text">High-level skills</div>
             </div>
             <!-- end quality-video -->
             <!-- begin quality-video -->
             <div class='quality-video-block'>
               <div class="quality-video-block__preview">
-                <div class="quality-video-block__preview-border"></div>
-                <div class="quality-video-block__preview-img" style="background-image: url('img/table.png')"></div>
+                <div class="preview-container">
+                  <div class="quality-video-block__preview-border"></div>
+                  <div class="quality-video-block__preview-img" style="background-image: url('img/quality1.png')"></div>
+                </div>
                 <img class="quality-video-block__preview-icon play-icon" src="img/play.svg">
               </div>
               <div class="quality-video-block__decor"></div>
-              <span class="quality-video-block__text">Innovative Design</span>
+              <div class="quality-video-block__text">Quality Products</div>
             </div>
             <!-- end quality-video -->
           </div>
@@ -181,17 +199,17 @@
       <!-- end products-section -->
       <!-- begin design -->
       <div class='design'>
-        <!-- begin info -->
+        <!-- begin info-container -->
         <div class='info-container--design'>
-          <!-- begin info__text-container -->
-          <div class="info__text-container--design">
-            <div class="info__title-container">
-              <div class="info__title-decor--left"></div>
-              <span class="info__title info__title--dark">WE DO THE DESIGN <br />OF ANY COMPLEXITY</span>
+          <!-- begin info-text-container -->
+          <div class="info-text-container--design">
+            <div class="info-text-container__title">
+              <div class="info-text-container__title__decor--left"></div>
+              <span class="info-text-container__title__text info-text-container__title__text--dark">WE DO THE DESIGN <br />OF ANY COMPLEXITY</span>
             </div>
-            <div class="info__subtext-container">
-              <div class="info__subtext-decor--left"></div>
-              <p class="info__subtext info__subtext--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis augue quis sagittis consequat. Aliquam erat volutpat. Ut eu pulvinar nunc. risus.</p>
+            <div class="info-subtext-container">
+              <div class="info-subtext-container__decor--left"></div>
+              <p class="info-subtext-container__text info-subtext-container__text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis augue quis sagittis consequat. Aliquam erat volutpat. Ut eu pulvinar nunc. risus.</p>
             </div>
             <div class="btn">
               <img class="btn__icon--left" src="img/play-small.svg">
@@ -199,39 +217,41 @@
             </div>
           </div>
           <div class="design-decor"></div>
-          <!-- end info__text-container -->
+          <!-- end info-text-container -->
         </div>
-        <!-- end info -->
+        <!-- end info-container -->
       </div>
       <!-- end design -->
       <!-- begin about -->
       <div class='about'>
-        <!-- begin info -->
+        <!-- begin info-container -->
         <div class='info-container'>
-          <div class="info-img" style="background-image: url('img/table.png')"></div>
-          <!-- begin info__text-container -->
-          <div class="info__text-container">
-            <div class="info__title-container">
-              <div class="info__title-decor--right"></div>
-              <span class="info__title">DECOR</span>
+          <div class="info-img-container">
+            <div class="info-img" style="background-image: url('img/table.png')"></div>
+          </div>
+          <!-- begin info-text-container -->
+          <div class="info-text-container">
+            <div class="info-text-container__title">
+              <div class="info-text-container__title__text-decor--right"></div>
+              <span class="info-text-container__title__text">DECOR</span>
             </div>
-            <div class="info__subtext-container">
-              <div class="info__subtext-decor--right"></div>
-              <p class="info__subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis augue quis sagittis consequat. Aliquam erat volutpat. Ut eu pulvinar nunc. risus.</p>
+            <div class="info-subtext-container">
+              <div class="info-subtext-container__decor--right"></div>
+              <p class="info-subtext-container__text info-subtext-container__text--right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis augue quis sagittis consequat. Aliquam erat volutpat. Ut eu pulvinar nunc. risus.</p>
             </div>
             <div class="learn-more">
               <span class="learn-more--text">LEARN MORE</span>
-              <img class="learn-more--icon" src="arrow_right">
+              <img class="btn__icon--right btn__icon--orange" src="img/arrow_down_orange.svg">
               <div class="learn-more--underline"></div>
             </div>
           </div>
-          <!-- end info__text-container -->
+          <!-- end info-text-container -->
           <div class="section-num-container">
             <span class="section-num">02 <div class="dot">.</div></span>
             <div class="section-decor"></div>
           </div>
         </div>
-        <!-- end info -->
+        <!-- end info-container -->
       </div>
       <!-- end about -->
       <!-- begin footer-container -->
