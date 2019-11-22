@@ -10,6 +10,36 @@ a
 
 .slider
 	display: none
+	position: fixed
+	transform: rotate(90.0deg)
+	display: flex
+	align-items: center
+	top: 50%
+	left: 180px
+
+	span 
+		font-size: 52px
+		letter-spacing: 5px
+		line-height: 58px
+		color: #bea67c
+		font-weight: bold
+
+	&__bullets-container
+		display: flex
+		position: relative
+		// flex-direction: column
+		margin-left: 40px
+	
+	&__bullet
+		width: 10px
+		height: 10px
+		background-color: #303030
+		border-radius: 50%
+		margin-left: 40px
+
+		&--highlighted
+			background-color: #bea67c
+
 
 
 .hamburger
@@ -57,6 +87,12 @@ header
 		display: flex
 		list-style: none
 		li
+			font-size: 15px
+			letter-spacing: 0px
+			line-height: 27px
+			color: #ffffff
+			font-weight: bold
+
 			&:not(:first-child)
 				margin-left: 119px
 			&:last-child
@@ -88,6 +124,9 @@ header
 	color: #ffffff
 	display: flex
 	cursor: pointer
+	font-size: 15px
+	letter-spacing: 1px
+	font-weight: bold
 	span
 		margin-right: 6px
 
@@ -109,6 +148,7 @@ header
 		margin-bottom: 61px
 		// text-align: center
 
+
 .mouse-icon
 	margin-top: 66px
 	bottom: 32px
@@ -125,7 +165,6 @@ header
 
 .rotated-text
 	color: #ffffff
-	// position: absolute
 	
 .scroll-text
 	transform: rotate(90.0deg)
@@ -179,20 +218,25 @@ header
 
 
 .info-text-container
-	width: 575px
+	// width: 575px
 	display: flex
 	flex-direction: column
 
+	&--left
+		margin-right: 47px
+
 	&--right
+		margin-left: 125px
 		align-items: flex-end
 		justify-content: flex-end
-		// float: right
 	&--about
 		margin-left: 95px
 
 
 .info-text-container__title
 	margin-bottom: 32px
+	display: flex
+	align-items: center
 	&__text
 		font-size: 48px
 		letter-spacing: 3px
@@ -201,7 +245,21 @@ header
 		font-weight: bold
 
 
+.info-text-container__title-decor
+	position: relative
+	width: 151px
+	height: 1px
+	background-color: black
+
+	&--left
+		margin-right: 30px
+
+	&--right
+		margin-left: 30px
+
+
 .info-subtext-container
+	display: flex
 	margin-bottom: 32px
 	&__text
 		// height: 74px
@@ -217,6 +275,19 @@ header
 
 		&--about
 			width: 356px
+
+	&__decor
+		margin-top: 9px
+		width: 44px
+		height: 4px
+		background-color: #bea67c
+		&--left
+			margin-left: 108px
+			margin-right: 30px
+
+		&--right
+			margin-left: 30px
+			margin-right: 108px
 	
 
 .info-img
@@ -233,6 +304,8 @@ header
 	border-radius: 5px
 
 .learn-more
+	width: 200px
+	height: 50px
 	cursor: pointer
 	&__text
 		font-size: 14px
@@ -241,14 +314,20 @@ header
 		color: #000000
 		font-weight: bold
 
+	&__underline
+		width: 44px
+		height: 2px
+		background-color: #a9946e
+		position: relative
+		bottom: 20px
+
 
 .section-num-container
 	position: relative
-	// top: 100px
 	&--left
 		right: 175px
 	&--right
-		left: 275px
+		left: 355px
 
 
 	width: 120px
@@ -286,6 +365,18 @@ header
 		color: #000000
 		font-weight: bold
 		text-align: center
+
+
+	&__title-decor
+		width: 44px
+		height: 4px
+		background-color: #bea67c
+		margin: 
+			bottom: 25px
+			left: auto
+			right: auto
+
+
 	&__subtext
 		// width: 574px
 		height: 82px
@@ -297,6 +388,8 @@ header
 		margin-bottom: 80px
 
 
+
+$quality-border-size: 272px 
 
 .quality-videos-container
 	display: flex
@@ -315,13 +408,13 @@ header
 		margin-bottom: 0
 		align-items: center
 		cursor: pointer
+		height: $quality-border-size
 		
 	&__preview-border
-			width: 272px
-			height: 272px
-			border-radius: 136px
-			// background-color: #bababa
-			border: 1px solid #e1e1e1
+		width: $quality-border-size
+		height: $quality-border-size
+		border-radius: 136px
+		border: 1px solid #e1e1e1
 
 	&__preview-img
 		width: 240px
@@ -337,6 +430,18 @@ header
 	&__preview-icon
 		position: relative
 		bottom: 227px
+
+	&__decor
+		width: 25px
+		height: 1px
+		background-color: #bea67c
+		margin: 
+			left: auto
+			right: auto
+			top: 24px
+			bottom: 18px
+
+
 	
 	&__text
 		text-align: center
@@ -345,13 +450,21 @@ header
 		line-height: 24px
 		color: #000000
 		text-align: center
+// 24 px margin top
 
 
 .play-icon
+	position: relative
 	z-index: 200
+	width: 71px
+	height: 71px
+
 
 .preview-container	
 	height: 325px
+
+
+
 
 
 
@@ -379,7 +492,7 @@ header
 .design-text-container
 	display: flex
 	flex-direction: column
-	width: 524px
+	// width: 524px
 	margin-top: 215px
 	margin-left: 212px
 
@@ -390,16 +503,46 @@ header
 		line-height: 60px
 		color: #bea67c
 		font-weight: bold
+		display: flex
 
 
-.design-subtext-container__text
-	margin-top: 55px
-	width: 503px
-	height: 115px
-	font-size: 18px
-	letter-spacing: 0px
-	line-height: 25px
-	color: #ffffff
+	&__title-decor
+		position: relative
+		width: 151px
+		height: 1px
+		background-color: #ffffff
+		margin-top: 30px
+
+		&--left
+			margin-right: 30px
+
+		// &--right
+			// margin-left: 30px
+
+
+.design-subtext-container
+	
+	display: flex
+	&__decor
+		margin-top: 9px
+		width: 44px
+		height: 4px
+		background-color: #bea67c
+		&--left
+			margin-left: 108px
+			margin-right: 30px
+
+		// &--right
+		// 	margin-left: 30px
+		// 	margin-right: 108px
+	&__text
+		width: 503px
+		height: 115px
+		font-size: 18px
+		letter-spacing: 0px
+		line-height: 25px
+		color: #ffffff
+		margin-bottom: 47px
 
 .play-min-icon
 	width: 25px
@@ -407,6 +550,7 @@ header
 	margin-right: 17px
 	
 .play-btn
+	margin-top: 55px
 	padding-right: 30px
 
 
