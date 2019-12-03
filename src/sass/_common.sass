@@ -52,6 +52,9 @@ a
 		line-height: 27px
 		color: #ffffff
 		font-weight: bold
+		+r(458)
+			display: none
+	
 
 .hamburger-icon
 	width: 33px
@@ -120,6 +123,8 @@ header
 .header-right
 	display: flex
 	align-items: baseline
+	+r(458)
+		display: none
 
 
 .header-lang
@@ -139,6 +144,11 @@ header
 	width: 500px
 	display: flex
 	flex-direction: column
+	+r(668)
+		// align-items: center
+		width: 50wv
+		padding-left: 10px
+	+r(388)
 	
 
 	&__title
@@ -148,7 +158,20 @@ header
 		color: #bea67c
 		font-weight: bold
 		margin-bottom: 61px
-		// text-align: center
+
+		+r(668)
+			font-size: 5em
+			width: 100vw
+
+		+r(644)
+			font-size: 4em
+			text-align: center
+
+		+r(512)
+			font-size: 3em
+
+		+r(324)
+			font-size: 2.5em
 
 
 .mouse-icon
@@ -208,6 +231,17 @@ header
 		&--orange 
 			position: relative
 			top: 10px
+
+	+r(638)
+		margin: 0 auto
+
+	+r(510)
+		width: 50vw
+		min-width: 200px
+		justify-content: flex-start
+	
+	+r(388)
+		margin: 0 0
 	
 	
 
@@ -234,6 +268,8 @@ header
 		margin-left: 125px
 		align-items: flex-end
 		justify-content: flex-end
+		+r(350)
+			margin-left: 0
 	&--about
 		margin-left: 95px
 
@@ -249,6 +285,13 @@ header
 		color: #010101
 		font-weight: bold
 
+		+r(500)
+			font-size: 3em
+
+		+r(412)
+			font-size: 2em
+
+
 
 .info-text-container__title-decor
 	position: relative
@@ -261,6 +304,9 @@ header
 
 	&--right
 		margin-left: 30px
+
+	+r(350)
+		display: none
 
 
 .info-subtext-container
@@ -277,9 +323,13 @@ header
 
 		&--left
 			width: 356px
+			
 
 		&--about
 			width: 356px
+
+
+		
 
 	&__decor
 		margin-top: 9px
@@ -293,6 +343,12 @@ header
 		&--right
 			margin-left: 30px
 			margin-right: 108px
+
+		+r(350)
+			display: none
+
+	+r(500)
+		width: 70vw
 	
 
 .info-img
@@ -374,6 +430,12 @@ header
 		color: #000000
 		font-weight: bold
 		text-align: center
+
+		+r(350)
+			font-size: 2.5em
+
+		+r(268)
+			font-size: 2em
 
 
 	&__title-decor
@@ -491,17 +553,21 @@ $quality-border-size: 272px
 	background-repeat: no-repeat
 	padding: 90px 180px
 
+	+r(1066)
+		padding: 90px 30px
+
+
 
 
 .design-container
-	width: 100%
+	width: 100wv
 	height: 735px
 	display: flex
 	flex-direction: column
 	margin:
-		
 		left: auto
 		right: auto
+		
 	border: 1px solid #958364
 	// padding: 212px 665px 181px 218px  
 
@@ -511,6 +577,8 @@ $quality-border-size: 272px
 	// width: 524px
 	margin-top: 215px
 	margin-left: 212px
+	+r(1348)
+		margin: auto auto
 
 
 	&__title
@@ -520,6 +588,12 @@ $quality-border-size: 272px
 		color: #bea67c
 		font-weight: bold
 		display: flex
+
+		+r(500)
+			font-size: 3em
+
+		+r(412)
+			font-size: 2em
 
 
 	&__title-decor
@@ -534,6 +608,8 @@ $quality-border-size: 272px
 
 		// &--right
 			// margin-left: 30px
+		+r(350)
+			display: none
 
 
 .design-subtext-container
@@ -547,6 +623,9 @@ $quality-border-size: 272px
 		&--left
 			margin-left: 108px
 			margin-right: 30px
+		
+		+r(350)
+			display: none
 
 		// &--right
 		// 	margin-left: 30px
@@ -559,6 +638,7 @@ $quality-border-size: 272px
 		line-height: 25px
 		color: #ffffff
 		margin-bottom: 47px
+
 
 .play-min-icon
 	width: 25px
