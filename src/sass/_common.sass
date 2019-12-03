@@ -73,7 +73,7 @@ header
 	background: #141414 url('/img/footer.png') 
 	background-repeat: no-repeat
 	background-size: 100%
-	background-position: center
+	background-position: cover
 
 .header-top
 	padding: 34px 27px
@@ -100,6 +100,8 @@ header
 
 			a 
 				color: #ffffff
+	+r(1194)
+		display: none
 
 
 
@@ -215,6 +217,9 @@ header
 	display: flex
 	align-items: center
 	justify-content: center
+	flex-wrap: wrap
+
+
 
 
 .info-text-container
@@ -297,11 +302,15 @@ header
 	&--table
 		background-size: 140%
 		background-position: right
+
+
 	
 .info-img-container
 	box-shadow: 0 0 0 8px rgba(195, 195, 197, 0.2), 0 0 0 6px rgba(195, 195, 197, 0.178)
 	border: 0px solid white
 	border-radius: 5px
+	+r(1194)
+		margin-top: 100px
 
 .learn-more
 	width: 200px
@@ -395,12 +404,18 @@ $quality-border-size: 272px
 	display: flex
 	align-items: center
 	justify-content: center
+	flex-wrap: wrap
+	
 
 .quality-video-block
 	margin-bottom: 157px
+	+r(624)
+		margin: 0 auto
 
 	&:not(:last-child)
 		margin-right: 82px
+		+r(624)
+			margin-right: auto
 
 	&__preview
 		display: flex
@@ -409,6 +424,7 @@ $quality-border-size: 272px
 		align-items: center
 		cursor: pointer
 		height: $quality-border-size
+		
 		
 	&__preview-border
 		width: $quality-border-size
@@ -572,6 +588,7 @@ footer
 	display: flex
 	justify-content: space-around
 	align-items: center
+	flex-wrap: wrap
 	// color: white
 	
 .footer-subtext
@@ -584,6 +601,8 @@ footer
 
 .logo
 	cursor: pointer
+	+r(1194)
+		margin: 0 auto
 	&__name
 		font-size: 30px
 		letter-spacing: 9px
