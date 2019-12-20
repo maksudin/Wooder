@@ -69,8 +69,5 @@
   "dependencies": {
     "gulp-changed": "^4.0.2"
   },
-
   "homepage": "https://maksudin.github.io/Wooder"
-
-  
 }

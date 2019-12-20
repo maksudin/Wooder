@@ -73,7 +73,7 @@ a
 
 header
 	margin-bottom: 200px
-	background: #141414 url('/img/footer.png') 
+	background: #141414 url('img/footer.png') 
 	background-repeat: no-repeat
 	background-size: 100%
 	background-position: cover
@@ -355,14 +355,23 @@ header
 	width: 615px
 	height: 400px
 	background-repeat: no-repeat
+
 	&--table
 		background-size: 140%
 		background-position: right
+
+	
+
 	
 	+r(650)
 		width: 80vw
 		height: 52vw
 		background-size: 140%
+
+		&--about
+			background-size: 100%
+			+r(310)
+				background-size: 120%
 
 
 	
@@ -676,7 +685,7 @@ $quality-border-size: 272px
 
 .footer-container
 	width: 100%
-	background: #252525 url('/img/footer.png') 
+	background: #252525 url('img/footer.png') 
 	background-repeat: no-repeat
 	background-size: 250%
 	background-position: right
